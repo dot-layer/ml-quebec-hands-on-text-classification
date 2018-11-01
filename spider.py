@@ -59,6 +59,9 @@ qc_authors = [
 # 'http://www.journaldemontreal.com/auteur/richard-martineau/page/1?pageSize=100&ajax=true'
 
 class Spider(scrapy.Spider):
+
+    DOWNLOAD_DELAY = 2
+
     name = 'ml-quebec-2018-spider'
 
     start_urls = [
